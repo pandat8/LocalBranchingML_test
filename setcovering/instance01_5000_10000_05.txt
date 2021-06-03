@@ -1,0 +1,640 @@
+/Users/defengliu/anaconda3/envs/py37/bin/python /Users/defengliu/PycharmProjects/LocalBranchingML/test01.py
+Set covering: :
+original model: <pyscipopt.scip.Model object at 0x7fc223928980>
+N of variables: <built-in method getNVars of pyscipopt.scip.Model object at 0x7fc223928980>
+N of constraints: <built-in method getNLPRows of pyscipopt.scip.Model object at 0x7fc223928980>
+* Model status: nodelimit
+* LP status: 1
+Not optimal
+Obj    value: 110.00000000000011
+LP Obj value: 65.94771262528624
+No. of branching cands 279
+no. of MIP variables:  10000
+no. of sub_MIP variables:  10000
+number of rows: 5000
+sub-MIP relaxed!
+number of violated constraints:  4264
+repaired-sub-MIP number of constraints: 5000
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.4s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.4s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.99
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.3s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 3.897000e+03 |    Inf | unknown
+ 10.4s|     1 |     0 |  4344 |     - |  1278M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 3.839611e+03 | 3.897000e+03 |   1.49%| unknown
+r10.5s|     1 |     0 |  4344 |     - |rounding|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 3.839611e+03 | 3.896000e+03 |   1.47%| unknown
+r10.6s|     1 |     0 |  4344 |     - |shifting|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 3.839611e+03 | 3.895000e+03 |   1.44%| unknown
+i10.7s|     1 |     0 |  4344 |     - |  oneopt|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 3.839611e+03 | 3.847000e+03 |   0.19%| unknown
+ 30.0s|     1 |     2 |  6844 |     - |  1283M |   0 |8824 |4265 |4265 |   0 |  2 |   0 |   0 | 3.839611e+03 | 3.847000e+03 |   0.19%| unknown
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.01
+Solving Nodes      : 1
+Primal Bound       : +3.84700000000019e+03 (6 solutions)
+Dual Bound         : +3.83961073825503e+03
+Gap                : 0.19 %
+Status: timelimit Best obj: 3847.0000000001864 Solving time: 30.012452
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (3.4s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (3.4s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.83
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 7.6s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 3.471000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 10338 |     - |  1277M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 3.471000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +3.47100000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 3471.0 Solving time: 30.002729
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.6s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.6s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.91
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.4s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 3.044000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 12416 |     - |  1277M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 3.044000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +3.04400000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 3044.0 Solving time: 30.00253
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.9s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.9s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.79
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 7.5s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 2.618000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 13038 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 2.618000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +2.61800000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 2618.0 Solving time: 30.001017
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.3s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.3s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 1 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.97
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.2s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 2.191000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 13421 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 2.191000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +2.19100000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 2191.0 Solving time: 30.002909
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.3s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.3s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.86
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.1s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 1.765000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 13343 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 1.765000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +1.76500000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 1765.0 Solving time: 30.000659
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.5s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.5s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.86
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.2s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 1.339000e+03 |    Inf | unknown
+ 30.0s|     1 |     0 | 13367 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 1.339000e+03 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +1.33900000000000e+03 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 1339.0 Solving time: 30.004236
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.5s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.5s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 4.87
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.2s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 9.120000e+02 |    Inf | unknown
+ 30.0s|     1 |     0 | 13430 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 9.120000e+02 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +9.12000000000000e+02 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 912.0 Solving time: 30.003218
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 2 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (3.4s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (3.4s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 2 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.76
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 7.7s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 4.860000e+02 |    Inf | unknown
+ 30.0s|     1 |     0 | 13044 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 4.860000e+02 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +4.86000000000000e+02 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 486.0 Solving time: 30.003114
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.8s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.8s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 1 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.34
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 6.7s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 5.900000e+01 |    Inf | unknown
+ 31.2s|     1 |     0 | 12184 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 5.900000e+01 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 31.24
+Solving Nodes      : 1
+Primal Bound       : +5.90000000000000e+01 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 59.0 Solving time: 31.235259
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (3.0s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (3.0s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 1 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.37
+transformed 1/1 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 7.3s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 5.900000e+01 |    Inf | unknown
+ 30.0s|     1 |     0 | 12073 |     - |  1276M |   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 5.900000e+01 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 30.00
+Solving Nodes      : 1
+Primal Bound       : +5.90000000000000e+01 (2 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+Status: timelimit Best obj: 59.0 Solving time: 30.0012
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 0 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 3, exhaustive) 5440 del vars, 736 del conss, 0 add conss, 0 chg bounds, 1 chg sides, 0 chg coeffs, 4265 upgd conss, 0 impls, 0 clqs
+   (2.7s) probing: 51/8824 (0.6%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (2.7s) probing aborted: 50/50 successive totally useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5440 deleted vars, 736 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 1 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 8824 variables (8824 bin, 0 int, 0 impl, 0 cont) and 4265 constraints
+      1 constraints of type <knapsack>
+   4264 constraints of type <logicor>
+transformed objective value is always integral (scale: 1)
+Presolving Time: 5.63
+transformed 2/2 original solutions to the transformed problem space
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+p 7.0s|     1 |     0 |     0 |     - |   locks|   0 |8824 |4265 |4265 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 7.01
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 7.013545
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.28
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.1s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.10
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.103738
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.58
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.5s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.47
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.467633
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.36
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.5s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.52
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.524602
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.14
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.2s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.19
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.194454
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.91
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.9s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.90
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.895683
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.20
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.1s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.11
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.108724
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.15
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 2.0s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 2.00
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 2.003414
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       5437 del vars, 1 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       10000 del vars, 5001 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (3 rounds: 3 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5001 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 1.14
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 1.9s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 1.94
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 1.940265
+the feasible solution of subMIP is added to subMIP
+Initial obj: 4264.0
+1/1 feasible solution given by solution candidate storage, new primal bound 4.264000e+03
+
+presolving:
+(round 1, fast)       10000 del vars, 5000 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 14264 deleted vars, 5000 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 0 variables (0 bin, 0 int, 0 impl, 0 cont) and 0 constraints
+transformed objective value is always integral (scale: 1)
+Presolving Time: 0.91
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl.
+t 1.7s|     1 |     0 |     0 |     - | trivial|   0 |   0 |   0 |   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 0.000000e+00 |   0.00%| unknown
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 1.70
+Solving Nodes      : 1
+Primal Bound       : +0.00000000000000e+00 (3 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : 0.00 %
+Status: optimal Best obj: 0.0 Solving time: 1.695895
+Neighsize: 0.1000 Best obj: 3847.0000 Solving time: 30.0125
+Neighsize: 0.2000 Best obj: 3471.0000 Solving time: 30.0027
+Neighsize: 0.3000 Best obj: 3044.0000 Solving time: 30.0025
+Neighsize: 0.4000 Best obj: 2618.0000 Solving time: 30.0010
+Neighsize: 0.5000 Best obj: 2191.0000 Solving time: 30.0029
+Neighsize: 0.6000 Best obj: 1765.0000 Solving time: 30.0007
+Neighsize: 0.7000 Best obj: 1339.0000 Solving time: 30.0042
+Neighsize: 0.8000 Best obj: 912.0000 Solving time: 30.0032
+Neighsize: 0.9000 Best obj: 486.0000 Solving time: 30.0031
+Neighsize: 1.0000 Best obj: 59.0000 Solving time: 31.2353
+Neighsize: 1.0000 Best obj: 59.0000 Solving time: 30.0012
+Neighsize: 2.0000 Best obj: 0.0000 Solving time: 7.0135
+Neighsize: 3.0000 Best obj: 0.0000 Solving time: 2.1037
+Neighsize: 4.0000 Best obj: 0.0000 Solving time: 2.4676
+Neighsize: 5.0000 Best obj: 0.0000 Solving time: 2.5246
+Neighsize: 6.0000 Best obj: 0.0000 Solving time: 2.1945
+Neighsize: 7.0000 Best obj: 0.0000 Solving time: 2.8957
+Neighsize: 8.0000 Best obj: 0.0000 Solving time: 2.1087
+Neighsize: 9.0000 Best obj: 0.0000 Solving time: 2.0034
+Neighsize: 10.0000 Best obj: 0.0000 Solving time: 1.9403
+Neighsize: -1.0000 Best obj: 0.0000 Solving time: 1.6959
+
+Process finished with exit code 0
